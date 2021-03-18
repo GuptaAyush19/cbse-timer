@@ -24,16 +24,7 @@ p#time {
     top: 50%;
     transform: translate(-50%, -150%);
     /* Style the text font and size */
-    font-size: 350%;
-}
-
-
-/* Laptop and Tablet */
-
-@media screen and (min-width:405px) and (max-width: 940px) {
-    p#time {
-        transform: translate(-50%, -100%);
-    }
+    font-size: 500%;
 }
 
 footer {
@@ -43,6 +34,15 @@ footer {
     font-size: 80%;
     margin: 1.5%;
     font-style: italic;
+}
+
+
+/* Laptop and Tablet */
+
+@media screen and (min-width:405px) and (max-width: 940px) {
+    p#time {
+        transform: translate(-50%, -75%);
+    }
 }
 
 
