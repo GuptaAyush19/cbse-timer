@@ -1,0 +1,61 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+img.github {
+    padding: 0;
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    width: 100px;
+}
+
+p#time {
+    /* Center this element horizontally and vertically */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -150%);
+    /* Style the text font and size */
+    font-size: 350%;
+}
+
+
+/* Laptop and Tablet */
+
+@media screen and (min-width:405px) and (max-width: 940px) {
+    p#time {
+        transform: translate(-50%, -100%);
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 80%;
+    margin: 1.5%;
+    font-style: italic;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 405px) {
+    img.github {
+        width: 75px;
+    }
+    p#time {
+        transform: translate(-50%, -75%);
+    }
+    footer {
+        font-size: 70%;
+    }
+}
