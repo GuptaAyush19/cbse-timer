@@ -15,9 +15,9 @@ $(document).ready(function() {
         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        let time = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-        $("p#time").text(time);
-
+        $("td#d").text(days + "d ");
+        $("td#h").text(hours + "h ");
+        $("td#m").text(minutes + "m ");
+        $("td#s").text(seconds + "s");
     }, 500);
 });
