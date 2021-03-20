@@ -5,18 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="CBSE Board-Exam Timer">
+    <meta property="og:description" content="Time left for CBSE board-exam">
+    <meta property="og:image" itemprop="image" content="./img/cbse.png">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Import JS -->
     <script src="./script/main.min.js"></script>
     <!-- Import CSS -->
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/main.min.css">
     <title>CBSE Board-Exam Timer</title>
 </head>
 
 <body>
-    <a href=""><img src="./img/github-logo-white.png" alt="github-logo" class="github"></a>
-    <p id="time"></p>
+    <a href="https://github.com/GuptaAyush19/cbse-timer">
+        <img src="./img/github-logo-white.png" alt="github-logo" class="github">
+    </a>
+    <!-- Desktop Display-->
+    <table id="time" class="desktop">
+        <tr>
+            <td id="d">00</td>
+            <td id="h">00</td>
+            <td id="m">00</td>
+            <td id="s">00</td>
+        </tr>
+    </table>
+    <!-- Mobile/Tablet Display -->
+    <table id="time" class="mobile">
+        <tr>
+            <td id="d">00</td>
+            <td id="h">00</td>
+        </tr>
+        <tr>
+            <td id="m">00</td>
+            <td id="s">00</td>
+        </tr>
+    </table>
     <footer>Time left for CBSE board-exam; &copy 2021 <a href="https://github.com/GuptaAyush19/">AG</a></footer>
 </body>
 

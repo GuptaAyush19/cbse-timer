@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: black;
     margin: 0;
     padding: 0;
     color: aliceblue;
@@ -17,14 +17,18 @@ img.github {
     width: 100px;
 }
 
-p#time {
+table#time {
     /* Center this element horizontally and vertically */
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -60%);
     /* Style the text font and size */
     font-size: 500%;
+}
+
+td {
+    padding: 10px;
 }
 
 footer {
@@ -37,25 +41,19 @@ footer {
 }
 
 
-/* Laptop and Tablet */
+/* Desktop */
 
-@media screen and (min-width:405px) and (max-width: 940px) {
-    p#time {
-        transform: translate(-50%, -75%);
-    }
+@media only screen and (min-width: 670px) {
+    table#time {transform: translate(-50%, -60%);}
+    .desktop {display: block;}
+    .mobile {display: none;}
 }
 
 
 /* Mobile */
 
-@media screen and (max-width: 405px) {
-    img.github {
-        width: 75px;
-    }
-    p#time {
-        transform: translate(-50%, -75%);
-    }
-    footer {
-        font-size: 70%;
-    }
+@media only screen and (max-width: 670px) {
+    table#time {transform: translate(-50%, -50%);}
+    .desktop {display: none;}
+    .mobile {display: block;}
 }
